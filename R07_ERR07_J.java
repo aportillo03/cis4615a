@@ -2,9 +2,10 @@
 Rule 07. Exceptional Behavior (ERR)
 ERR07-J. Do not throw RuntimeException, Exception, or Throwable
 */
+
 boolean isCapitalized(String s) {
   if (s == null) {
-    throw new RuntimeException("Null String");
+    throw new NullPointerException();
   }
   if (s.equals("")) {
     return true;
